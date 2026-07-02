@@ -1,0 +1,154 @@
+// 
+// menu.scss
+// 
+
+// ── Default state (over dark hero) ──
+.navbar {
+    padding: 20px 0px;
+    transition: all 0.3s ease-in-out;
+
+    .navbar-nav {
+        position: relative;
+        .nav-item {
+            .nav-link {
+                font-size: 16px;
+                color: $navbar-link-color;
+                padding-right: 26px;
+                font-weight: 500;
+                transition: color 0.2s ease;
+
+                &:hover,
+                &:focus,
+                &.active {
+                    color: $navbar-hover-color;
+                }
+            }
+            &:last-child .nav-link {
+                padding-right: 0px !important;
+            }
+        }
+    }
+
+    .navbar-toggler {
+        padding: 0px;
+        border: none;
+        &:focus { box-shadow: none !important; }
+        .navbar-toggle-icon {
+            color: $navbar-link-color;
+        }
+    }
+
+    .nav-btn {
+        color: $primary;
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        background-color: transparent;
+        font-weight: 500;
+        transition: all 0.2s ease;
+
+        &:hover {
+            background-color: $primary;
+            color: #ffffff;
+            border-color: $primary;
+        }
+    }
+}
+
+// ── Sticky (scrolled) ──
+.nav-sticky {
+    padding: 12px 0px;
+    background-color: $card-bg;
+    box-shadow: 0px 4px 20px rgba($shadow-color, 0.07);
+
+    .navbar-nav {
+        .nav-item {
+            position: relative;
+            .nav-link {
+                color: $body-color;
+                &:hover,
+                &:active,
+                &:focus,
+                &.active {
+                    color: $primary;
+                }
+            }
+        }
+    }
+
+    .nav-btn {
+        color: #ffffff !important;
+        border: 1px solid $primary;
+        background-color: $primary;
+
+        &:hover {
+            background-color: darken($primary, 8%);
+            border-color: darken($primary, 8%);
+        }
+    }
+
+    .navbar-toggler .navbar-toggle-icon {
+        color: $body-color;
+    }
+}
+
+// ── Mobile (always has bg) ──
+@media (max-width: 991px) {
+    .navbar {
+        padding: 10px 0px;
+        background-color: $card-bg;
+        box-shadow: 0px 4px 20px rgba($shadow-color, 0.07) !important;
+
+        .navbar-nav {
+            padding: 15px 0px;
+            .nav-item .nav-link {
+                color: $body-color;
+            }
+        }
+
+        .navbar-toggler {
+            padding: 0px;
+            .navbar-toggle-icon {
+                color: $body-color;
+            }
+            &:focus { outline: none !important; }
+        }
+
+        .nav-btn {
+            color: #ffffff !important;
+            background-color: $primary;
+            border-color: $primary;
+        }
+    }
+}
+
+// ── Active link decoration ──
+.navbar .navbar-nav .nav-item .nav-link.active::before {
+    content: '';
+    position: absolute;
+    width: 28px;
+    left: -5px;
+    height: 20px;
+    border-radius: 30% 70% 70% 30% / 35% 44% 56% 65%;
+    background-color: rgba($primary, 0.1);
+}
+
+// ── Theme toggle button ──
+.theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: none;
+    background: rgba($primary, 0.15);
+    color: $primary;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 0;
+
+    &:hover {
+        background: $primary;
+        color: #ffffff;
+        transform: scale(1.08);
+    }
+}

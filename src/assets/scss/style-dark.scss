@@ -1,0 +1,25 @@
+﻿/* Template Name: Felipe Belmont - Responsive personal Page Template
+   Version: 1.0.0
+*/
+
+
+/**********************
+01.General
+
+***********************/
+
+[data-theme="dark"] {
+  @import "variables-dark";
+  @import "general";
+  @import "helper";
+  @import "components";
+  @import "menu";
+  @import "hero";
+  @import "form";
+  @import "footer";
+  @import "line-awesome";
+  @import "tabler-icons";
+  @import "text-roted";
+  @import "timeline";
+}
+
