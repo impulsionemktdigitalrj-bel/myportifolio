@@ -3,6 +3,8 @@ import { personalTech } from '../data'
 import IconifyIcon from '@/components/wrappers/IconifyIcon'
 import { Col, Container, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
+import jestLogo from '@/assets/images/logos/jest.svg'
+import scrumLogo from '@/assets/images/logos/scrum.svg'
 
 const PersonalDetails = () => {
   return (
@@ -50,7 +52,7 @@ const PersonalDetails = () => {
                     <div key={idx} className="mx-3 ms-sm-0 ms-sm-0 mb-3 card-bg rounded p-1 pe-3 p-md-3 pe-md-4 shadow-sm">
                       <div className="d-flex align-items-center">
                         <div className="thumb-md d-flex flex-wrap justify-content-center align-items-center">
-                          <IconifyIcon icon={item.icon} width={34} height={34} />
+                        {item.imgSrc ? <img src={(item.imgSrc === 'jest' ? jestLogo : scrumLogo)} alt={item.name} width={34} height={34} /> : <IconifyIcon icon={item.icon} width={34} height={34} />}
                         </div>
                         <div className="ms-3">
                           <h6 className="mb-0 fw-medium text-gray-700">{item.name}</h6>

@@ -1,5 +1,7 @@
 import IconifyIcon from '@/components/wrappers/IconifyIcon'
 import { Card, CardBody, Col, Container, Row } from 'react-bootstrap'
+import jestLogo from '@/assets/images/logos/jest.svg'
+import scrumLogo from '@/assets/images/logos/scrum.svg'
 
 const coursesData = [
   {
@@ -17,21 +19,21 @@ const coursesData = [
     description: 'Formação intermediária em JavaScript Vanilla — fundamentos, DOM, APIs e padrões.',
   },
   {
-    icon: 'feather:users',
+    imgSrc: scrumLogo,
     title: 'Scrum Master',
     provider: 'DIO',
     hours: '22 horas',
     description: 'Principais técnicas e conceitos do Framework Scrum para gestão ágil de projetos.',
   },
   {
-    icon: 'feather:check-circle',
+    imgSrc: jestLogo,
     title: 'Testes Unitários com Jest',
     provider: 'Udemy',
     hours: '15 horas',
     description: 'Criação de testes unitários automatizados com Jest para aplicações JavaScript/TypeScript.',
   },
   {
-    icon: 'feather:git-branch',
+    icon: 'devicon:git',
     title: 'Versionamento com Git e GitHub',
     provider: 'DIO',
     hours: '2 horas',
@@ -58,7 +60,7 @@ const Courses = () => {
               <Card className="rounded shadow border-0 h-100">
                 <CardBody className="p-4 m-2">
                   <div className="bg-soft-alt-orange d-flex justify-content-center align-items-center thumb-xl rounded mb-3">
-                    <IconifyIcon icon={course.icon} className="icon-md" />
+                    {'imgSrc' in course ? <img src={course.imgSrc} alt={course.title} style={{width: 38, height: 38}} /> : <IconifyIcon icon={course.icon!} className="icon-md" />}
                   </div>
                   <h5 className="text-dark fs-18 fw-medium">{course.title}</h5>
                   <p className="text-primary fs-13 mb-2">{course.provider} · {course.hours}</p>

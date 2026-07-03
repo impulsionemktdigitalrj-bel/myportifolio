@@ -1,5 +1,7 @@
 import felipePhoto from '@/assets/images/felipe-photo.png'
 import IconifyIcon from '@/components/wrappers/IconifyIcon'
+import jestLogo from '@/assets/images/logos/jest.svg'
+import scrumLogo from '@/assets/images/logos/scrum.svg'
 import { Col, Container, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import { personalTech } from '../data'
@@ -32,7 +34,7 @@ const PersonalDetails = () => {
                     <div key={idx} className="me-3 mb-3 card-bg rounded p-2 pe-4 shadow-sm">
                       <div className="d-flex align-items-center">
                         <div className="d-flex justify-content-center align-items-center">
-                          <IconifyIcon icon={item.icon} width={28} height={28} />
+                          {item.imgSrc ? <img src={(item.imgSrc === 'jest' ? jestLogo : scrumLogo)} alt={item.name} width={28} height={28} /> : <IconifyIcon icon={item.icon} width={28} height={28} />}
                         </div>
                         <div className="ms-3">
                           <h6 className="mb-0 fw-medium text-gray-700">{item.name}</h6>
