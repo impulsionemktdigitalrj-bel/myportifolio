@@ -11,13 +11,13 @@ const ActionBox = () => {
             <div className="pattern-1 position-absolute">
               <img src={imageP1} alt='image' height={80} />
             </div>
-            <h2 className="text-dark" style={{ lineHeight: '1.5', position: 'relative' }}>I Am Available For Freelancer.</h2>
-            <p className="text-muted mb-0">Browse hundreds of job offers and find the bestsuitable position.</p>
+            <h2 className="text-dark" style={{ lineHeight: '1.5', position: 'relative' }}>Disponível para Projetos Freelance.</h2>
+            <p className="text-muted mb-0">Aberto a novas oportunidades e parcerias. Entre em contato!</p>
           </Col>
           <Col lg={6} className="ml-auto">
             <div className="cta-search">
               <form className="position-relative">
-                <input type="email" placeholder="Email Address" required />
+                <input type="email" placeholder="Seu melhor email" required />
                 <button type="submit" className="btn btn-dark">Send Massage</button>
               </form>
             </div>

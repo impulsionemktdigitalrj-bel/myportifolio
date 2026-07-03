@@ -64,9 +64,9 @@ const LifeTime = () => {
                           <span className="fw-medium text-primary ms-auto fs-14">2023 - 2026</span>
                         </AccordionHeader>
                         <AccordionBody className="accordion-body">
-                          <p className="text-muted mb-3">Node.js (Rocketseat 60h), JavaScript (DIO 39h), Scrum Master (DIO 22h), Testes Unitários com Jest (Udemy 15h), Git/GitHub (DIO 2h).
+                          <p className="text-muted mb-3">Claude 101 (Anthropic), Node.js (Rocketseat 60h), JavaScript (DIO 39h), Scrum Master (DIO 22h), Testes Unitários com Jest (Udemy 15h), HTML Web (DIO 21h), TypeScript (DIO), CI/CD com GitLab (DIO), Scrum Foundation SFPC (CertiProf 22h), Git/GitHub (DIO 2h).
                           </p>
-                          <p className="fw-medium">Rocketseat · DIO · Udemy</p>
+                          <p className="fw-medium">Anthropic · Rocketseat · DIO · Udemy · CertiProf</p>
                         </AccordionBody>
                       </AccordionItem>
                     </Accordion>
