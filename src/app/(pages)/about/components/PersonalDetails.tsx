@@ -10,17 +10,12 @@ const PersonalDetails = () => {
   return (
     <section className="section">
       <Container>
-        <Row className="align-items-center">
-          <Col lg={6} className="mb-4 mb-lg-0">
-            <div className="position-relative">
-              <img src={felipePhoto} alt="Felipe Belmont" className="img-fluid w-100" style={{ borderRadius: '16px', objectFit: 'cover', maxHeight: '520px' }} />
-            </div>
-          </Col>
-          <Col lg={6}>
+        <Row className="justify-content-center mb-5">
+          <Col lg={10} className="text-center">
             <span className="badge badge-lg rounded bg-soft-alt-success fw-normal fs-13 text-uppercase">Sobre</span>
-            <h4 className="fw-semibold text-dark mt-2">Desenvolvedor <mark>Full Stack</mark> com 4+ anos de experiência</h4>
+            <h4 className="fw-semibold text-dark mt-2 fs-2">Desenvolvedor <mark>Full Stack</mark> com 4+ anos de experiência</h4>
             <p className="text-muted fs-18 mt-3 mb-4">Profissional em Análise e Desenvolvimento de Software com foco em desenvolvimento full stack. Experiência em ciclos completos (SDLC) utilizando JavaScript, TypeScript, Next.js, NestJS e React, além de bancos PostgreSQL, MongoDB, Redis e mensageria AWS SQS. Proativo em boas práticas como versionamento (Git/GitHub/GitLab), testes automatizados (Jest) e metodologias ágeis (Scrum/Kanban).</p>
-            <div className="social">
+            <div className="social d-flex justify-content-center">
               <Link to="https://github.com/belmontprogramador" target="_blank" className='icon github me-1'>
                 <IconifyIcon icon='la:github' />
               </Link>
@@ -28,7 +23,15 @@ const PersonalDetails = () => {
                 <IconifyIcon icon='la:linkedin-in' />
               </Link>
             </div>
-            <hr className="hr-dashed my-4" />
+          </Col>
+        </Row>
+        <Row className="align-items-center">
+          <Col lg={5} className="mb-4 mb-lg-0">
+            <div className="d-flex justify-content-center">
+              <img src={felipePhoto} alt="Felipe Belmont" className="img-fluid" style={{ borderRadius: '16px', objectFit: 'cover', aspectRatio: '4/5', maxHeight: '480px' }} />
+            </div>
+          </Col>
+          <Col lg={7}>
             <div className="d-flex flex-wrap">
               {
                 personalTech.map((item, idx) => {
