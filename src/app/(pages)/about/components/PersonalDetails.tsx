@@ -1,4 +1,4 @@
-import felipePhoto from '@/assets/images/felipe-photo.png'
+import felipePhoto from '@/assets/images/users/felipe-about.png'
 import IconifyIcon from '@/components/wrappers/IconifyIcon'
 import jestLogo from '@/assets/images/logos/jest.svg'
 import scrumLogo from '@/assets/images/logos/scrum.svg'
@@ -11,10 +11,12 @@ const PersonalDetails = () => {
     <section className="section">
       <Container>
         <Row className="align-items-center">
-          <Col lg={4}>
-            <img src={felipePhoto} alt="Felipe Belmont" className="img-fluid rounded" />
+          <Col lg={6} className="mb-4 mb-lg-0">
+            <div className="position-relative">
+              <img src={felipePhoto} alt="Felipe Belmont" className="img-fluid w-100" style={{ borderRadius: '16px', objectFit: 'cover', maxHeight: '520px' }} />
+            </div>
           </Col>
-          <Col lg={8} className="align-self-center mt-5 mt-lg-0">
+          <Col lg={6}>
             <span className="badge badge-lg rounded bg-soft-alt-success fw-normal fs-13 text-uppercase">Sobre</span>
             <h4 className="fw-semibold text-dark mt-2">Desenvolvedor <mark>Full Stack</mark> com 4+ anos de experiência</h4>
             <p className="text-muted fs-18 mt-3 mb-4">Profissional em Análise e Desenvolvimento de Software com foco em desenvolvimento full stack. Experiência em ciclos completos (SDLC) utilizando JavaScript, TypeScript, Next.js, NestJS e React, além de bancos PostgreSQL, MongoDB, Redis e mensageria AWS SQS. Proativo em boas práticas como versionamento (Git/GitHub/GitLab), testes automatizados (Jest) e metodologias ágeis (Scrum/Kanban).</p>

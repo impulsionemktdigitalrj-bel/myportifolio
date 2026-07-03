@@ -76,6 +76,12 @@ export const servicesData: ServicesType[] = [
     title: 'Modelagem & Banco de Dados',
     description: 'PostgreSQL com Prisma ORM, MongoDB com Mongoose. Modelagem relacional e não-relacional, otimização de queries.'
   },
+  {
+    icon: 'feather:monitor',
+    variant: 'soft-alt-pink',
+    title: 'Consultoria de TI',
+    description: 'Análise de requisitos, arquitetura de software, escolha de tecnologias e mentoria para projetos de desenvolvimento web e mobile.'
+  },
 ]
 
 export const workData: WorkDataType[] = [

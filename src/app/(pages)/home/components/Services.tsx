@@ -36,7 +36,7 @@ const Services = () => {
           {
             servicesData.map((item, idx) => {
               return (
-                <Col lg={4} md={6} key={idx} className="mt-4 pt-2">
+                <Col lg={3} md={6} key={idx} className="mt-4 pt-2">
                   <ServicesCard {...item} />
                 </Col>
               )

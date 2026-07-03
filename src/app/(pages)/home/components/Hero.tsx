@@ -6,7 +6,7 @@ import Typist from 'react-text-typist';
 
 const Hero = () => {
   return (
-    <section className="hero-one position-relative main-bg py-5" id="home" style={{ backgroundImage: `url(${mainBg})`, backgroundSize: 'cover', backgroundPosition: 'center center' }}>
+    <section className="hero-one position-relative main-bg" id="home" style={{ backgroundImage: `url(${mainBg})`, backgroundSize: 'cover', backgroundPosition: 'center center' }}>
       <Container>
         <Row className="align-items-center justify-content-center">
           <Col xs={10} sm={8} md={5} lg={5} className="mx-auto mb-4 mb-lg-0">
