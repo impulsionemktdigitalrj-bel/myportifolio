@@ -1,5 +1,5 @@
-import felipePhoto from '@/assets/images/felipe-photo.png';
-import mainBg from '@/assets/images/personal/main-bg.png';
+﻿import felipePhoto from '@/assets/images/felipe-photo.png';
+import mainBg from '@/assets/images/personal/main-bg.jpg';
 
 import { Col, Container, Row } from 'react-bootstrap';
 import Typist from 'react-text-typist';

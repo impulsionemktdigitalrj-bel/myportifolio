@@ -2,7 +2,6 @@ import IconifyIcon from '@/components/wrappers/IconifyIcon'
 import clsx from 'clsx'
 import { useState } from 'react'
 import { Card, CardBody, Col, Container, Row } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
 import { ProjectData, ProjectType } from '../data'
 
 const ProjectCard = ({ icon, title, description, tags, variant, link, buttonLabel }: ProjectType) => {

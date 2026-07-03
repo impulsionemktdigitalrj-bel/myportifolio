@@ -1,4 +1,4 @@
-﻿﻿import mainBg from '@/assets/images/personal/main-bg.png'
+﻿﻿import mainBg from '@/assets/images/personal/main-bg.jpg'
 import { Col, Container, Row } from 'react-bootstrap'
 
 const Hero = () => {
