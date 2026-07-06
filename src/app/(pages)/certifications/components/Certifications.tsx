@@ -3,7 +3,9 @@ import { Card, CardBody, Col, Container, Row } from 'react-bootstrap'
 
 const certificationsData = [
   { title: 'Claude 101 — Anthropic', provider: 'Anthropic', hours: 'Curso Oficial', date: 'Jul 2026', file: 'certificate-claude101.pdf', highlight: true },
+  { title: 'Claude Code in Action', provider: 'Anthropic', hours: 'Curso Oficial', date: 'Jul 2026', file: 'certificado-claude-code.pdf', highlight: true },
   { title: 'Anthropic — Influência em AI', provider: 'Anthropic', hours: 'Certificação', date: 'Jun 2026', file: 'certificado-anthropic.pdf', highlight: true },
+  { title: 'Imersão Start Hacker — Ethical Hacking', provider: 'TI Academy', hours: '12 horas', date: 'Jul 2026', file: 'certificado-hacker.pdf', highlight: true },
   { title: 'Formação JavaScript Developer', provider: 'DIO', hours: '39 horas', date: 'Mai 2023', file: 'certificado-08.pdf' },
   { title: 'Formação HTML Web', provider: 'DIO', hours: '21 horas', date: 'Jun 2023', file: 'certificado-07.pdf' },
   { title: 'Scrum Foundation (SFPC)', provider: 'CertiProf', hours: '22 horas', date: 'Mai 2023', file: 'certificado-06.pdf' },
@@ -27,7 +29,7 @@ const Certifications = () => {
             <span className="badge badge-lg rounded bg-soft-alt-success fw-normal fs-13 text-uppercase">Certificações</span>
             <h2 className="fs-2 fw-medium lh-1 text-dark my-3">Certificados &amp; Cursos</h2>
             <p className="text-gray-700 fs-18 fs-lg mb-4 mb-md-5 lh-lg">
-              Ao todo são <mark>14 certificados</mark> em desenvolvimento web, lógica, metodologias ágeis e DevOps. Clique para baixar cada um em PDF.
+              Ao todo são <mark>16 certificados</mark> em desenvolvimento web, lógica, metodologias ágeis e DevOps. Clique para baixar cada um em PDF.
             </p>
           </Col>
         </Row>
