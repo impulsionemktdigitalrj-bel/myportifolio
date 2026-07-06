@@ -9,6 +9,7 @@ const Projects = lazy(() => import('@/app/(pages)/projects/page'))
 const Blogs = lazy(() => import('@/app/(pages)/blogs/page'))
 const Contact = lazy(() => import('@/app/(pages)/contact/page'))
 const BlogDetail = lazy(() => import('@/app/(pages)/blog-detail/page'))
+const ProjectDetail = lazy(() => import('@/app/(pages)/project-detail/page'))
 const Certifications = lazy(() => import('@/app/(pages)/certifications/page'))
 
 export type RoutesProps = {
@@ -43,6 +44,11 @@ const demoPages: RoutesProps[] = [
     path: '/projects',
     name: 'Projects',
     element: <Projects />,
+  },
+  {
+    path: '/projects/:slug',
+    name: 'Project-detail',
+    element: <ProjectDetail />,
   },
   {
     path: '/blogs',

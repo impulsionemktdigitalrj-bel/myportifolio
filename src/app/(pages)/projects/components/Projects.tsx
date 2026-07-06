@@ -2,28 +2,39 @@ import IconifyIcon from '@/components/wrappers/IconifyIcon'
 import clsx from 'clsx'
 import { useState } from 'react'
 import { Card, CardBody, Col, Container, Row } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 import { ProjectData, ProjectType } from '../data'
 
-const ProjectCard = ({ icon, title, description, tags, variant, link, buttonLabel }: ProjectType) => {
+const ProjectCard = ({ icon, title, description, tags, variant, link, buttonLabel, slug }: ProjectType) => {
   const label = buttonLabel || 'Ver no GitHub'
   const btnIcon = buttonLabel ? 'feather:external-link' : 'feather:github'
   return (
     <Card className="rounded shadow border-0 m-2 h-100">
-      <div className={`text-center ${variant} py-5 rounded`}>
-        <IconifyIcon icon={icon} className="icon-lg" />
-      </div>
+      <Link to={`/projects/${slug}`} className="text-decoration-none">
+        <div className={`text-center ${variant} py-5 rounded`}>
+          <IconifyIcon icon={icon} className="icon-lg" />
+        </div>
+      </Link>
       <CardBody className="p-4 m-2">
-        <h5 className="text-dark fs-18 fw-medium m-0">{title}</h5>
+        <Link to={`/projects/${slug}`} className="text-decoration-none">
+          <h5 className="text-dark fs-18 fw-medium m-0">{title}</h5>
+        </Link>
         <p className="text-muted mb-3 fs-14 mt-2">{description}</p>
         <div className="mb-3">
           {tags.map((tag, idx) => (
             <span key={idx} className="badge bg-primary bg-opacity-10 text-primary fw-normal fs-12 me-1">{tag}</span>
           ))}
         </div>
-        <a href={link} target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-outline-primary">
-          <IconifyIcon icon={btnIcon} className="me-1" />
-          {label}
-        </a>
+        <div className="d-flex gap-2">
+          <Link to={`/projects/${slug}`} className="btn btn-sm btn-outline-primary">
+            <IconifyIcon icon="feather:book-open" className="me-1" />
+            Ver README
+          </Link>
+          <a href={link} target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-outline-primary">
+            <IconifyIcon icon={btnIcon} className="me-1" />
+            {label}
+          </a>
+        </div>
       </CardBody>
     </Card>
   )

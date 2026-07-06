@@ -1,4 +1,4 @@
-export type ProjectType = {
+﻿export type ProjectType = {
   icon: string
   variant: string
   title: string
@@ -6,6 +6,7 @@ export type ProjectType = {
   tags: string[]
   link: string
   buttonLabel?: string
+  slug: string
 }
 
 export const ProjectData: ProjectType[] = [
@@ -16,6 +17,7 @@ export const ProjectData: ProjectType[] = [
     description: 'Portal institucional com sistema de gestão de conteúdo. Design profissional focado em acessibilidade e usabilidade.',
     tags: ['React', 'TypeScript', 'Next.js', 'Portal'],
     link: 'https://portalproteger.online/',
+    slug: 'portal-proteger',
     buttonLabel: 'Ver Site',
   },
   {
@@ -25,6 +27,7 @@ export const ProjectData: ProjectType[] = [
     description: 'Portal dedicado ao Estatuto da Criança e do Adolescente. Conteúdo educativo, navegação intuitiva e design responsivo.',
     tags: ['React', 'TypeScript', 'Next.js', 'Portal'],
     link: 'https://portaleca.online/',
+    slug: 'portal-eca',
     buttonLabel: 'Ver Site',
   },
   {
@@ -34,6 +37,7 @@ export const ProjectData: ProjectType[] = [
     description: 'App Android para a rádio Nativa com streaming ao vivo. Disponível na Google Play Store.',
     tags: ['Android', 'Streaming', 'Google Play'],
     link: 'https://play.google.com/store/apps/details?id=com.belmontprogramador.radionativaonstreaming&hl=pt',
+    slug: 'nativa-onstreaming',
     buttonLabel: 'Ver na Loja',
   },
   {
@@ -43,6 +47,7 @@ export const ProjectData: ProjectType[] = [
     description: 'App iOS para a rádio Nativa com streaming ao vivo. Disponível na Apple App Store.',
     tags: ['iOS', 'Streaming', 'App Store'],
     link: 'https://apps.apple.com/br/app/nativa-onstreaming/id6741536881',
+    slug: 'nativa-onstreaming',
     buttonLabel: 'Ver na Loja',
   },
   {
@@ -52,6 +57,7 @@ export const ProjectData: ProjectType[] = [
     description: 'E-commerce de aromatizantes construído com Shopify Liquid. Loja completa com catálogo de produtos, carrinho e checkout.',
     tags: ['Liquid', 'Shopify', 'E-commerce'],
     link: 'https://github.com/belmontprogramador/aromaambient',
+    slug: 'aromaambient',
   },
   {
     icon: 'devicon:typescript',
@@ -60,6 +66,7 @@ export const ProjectData: ProjectType[] = [
     description: 'Website para rádio online com streaming ao vivo. Construído com TypeScript e design responsivo.',
     tags: ['TypeScript', 'React', 'Streaming'],
     link: 'https://github.com/belmontprogramador/sitenativaradio',
+    slug: 'sitenativaradio',
   },
   {
     icon: 'devicon:javascript',
@@ -68,6 +75,7 @@ export const ProjectData: ProjectType[] = [
     description: 'Projeto integrando APIs de inteligência artificial com JavaScript.',
     tags: ['JavaScript', 'AI', 'API'],
     link: 'https://github.com/belmontprogramador/vertexai',
+    slug: 'vertexai',
   },
   {
     icon: 'devicon:react',
@@ -76,6 +84,7 @@ export const ProjectData: ProjectType[] = [
     description: 'Site institucional moderno com React. Layout profissional, animações suaves e formulário de contato integrado.',
     tags: ['React', 'TypeScript', 'Front-end'],
     link: 'https://github.com/belmontprogramador/lummensite',
+    slug: 'lummensite',
   },
   {
     icon: 'devicon:nodejs',
@@ -84,6 +93,7 @@ export const ProjectData: ProjectType[] = [
     description: 'API de gerenciamento de usuários com Node.js, Express, Prisma ORM e autenticação JWT.',
     tags: ['Node.js', 'Express', 'Prisma', 'JWT'],
     link: 'https://github.com/belmontprogramador/crud-simples-users',
+    slug: 'crud-simples-users',
   },
   {
     icon: 'devicon:typescript',
@@ -92,6 +102,7 @@ export const ProjectData: ProjectType[] = [
     description: 'Aplicativo mobile do ecossistema Lummen. Interface moderna com React Native e TypeScript.',
     tags: ['TypeScript', 'React Native', 'Mobile'],
     link: 'https://github.com/belmontprogramador/app-lummen',
+    slug: 'app-lummen',
   },
   {
     icon: 'devicon:nodejs',
@@ -100,6 +111,7 @@ export const ProjectData: ProjectType[] = [
     description: 'API backend do ecossistema Lummen com JavaScript, Express e banco de dados relacional.',
     tags: ['JavaScript', 'Express', 'API', 'Back-end'],
     link: 'https://github.com/belmontprogramador/backend-lummen',
+    slug: 'backend-lummen',
   },
   {
     icon: 'feather:layout',
@@ -108,6 +120,7 @@ export const ProjectData: ProjectType[] = [
     description: 'Painel administrativo com TypeScript para gestão de conteúdo, blogs e usuários.',
     tags: ['TypeScript', 'Admin', 'Dashboard'],
     link: 'https://github.com/belmontprogramador/painel-lummen',
+    slug: 'painel-lummen',
   },
   {
     icon: 'feather:briefcase',
@@ -116,6 +129,7 @@ export const ProjectData: ProjectType[] = [
     description: 'Plataforma web de empregos com TypeScript. Busca, filtros e candidaturas online.',
     tags: ['TypeScript', 'React', 'Jobs', 'Plataforma'],
     link: 'https://github.com/belmontprogramador/jobs',
+    slug: 'jobs',
   },
   {
     icon: 'feather:shopping-cart',
@@ -124,6 +138,7 @@ export const ProjectData: ProjectType[] = [
     description: 'Sistema de checkout completo com TypeScript. Carrinho, pagamento e finalização de compra.',
     tags: ['TypeScript', 'Checkout', 'E-commerce'],
     link: 'https://github.com/belmontprogramador/checkout',
+    slug: 'checkout',
   },
   {
     icon: 'feather:clock',
@@ -132,6 +147,7 @@ export const ProjectData: ProjectType[] = [
     description: 'Sistema de registro de ponto eletrônico com front-end React e API back-end em JavaScript.',
     tags: ['JavaScript', 'React', 'API', 'Ponto Eletrônico'],
     link: 'https://github.com/belmontprogramador/front-folha-ponto',
+    slug: 'folha-ponto',
   },
   {
     icon: 'feather:map-pin',
@@ -140,6 +156,7 @@ export const ProjectData: ProjectType[] = [
     description: 'Portal web institucional para prefeitura. Design responsivo, notícias e serviços ao cidadão.',
     tags: ['JavaScript', 'Portal', 'Institucional'],
     link: 'https://github.com/belmontprogramador/prefeituradeararuama',
+    slug: 'prefeitura-araruama',
   },
   {
     icon: 'feather:mail',
@@ -148,6 +165,7 @@ export const ProjectData: ProjectType[] = [
     description: 'API de envio de emails transacionais com TypeScript. Templates, anexos e fila de processamento.',
     tags: ['TypeScript', 'API', 'Email', 'Back-end'],
     link: 'https://github.com/belmontprogramador/api-de-email',
+    slug: 'api-email',
   },
   {
     icon: 'feather:radio',
@@ -156,5 +174,6 @@ export const ProjectData: ProjectType[] = [
     description: 'API para recebimento e processamento de sinais em tempo real com JavaScript.',
     tags: ['JavaScript', 'API', 'Real-time', 'Signals'],
     link: 'https://github.com/belmontprogramador/api-sinais-recebidos',
+    slug: 'api-sinais',
   },
 ]
